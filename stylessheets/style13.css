@@ -1,0 +1,245 @@
+body {
+    background: #293f50;
+}
+.primary-nav a,
+.primary-nav a {
+    color: #fff;
+  }
+.primary-nav a:hover,
+.primary-nav a:hover {
+    color: #648880;
+  }
+
+a {
+    color: #648880;
+    text-decoration: none;
+  }
+a:hover {
+    color: #a9b2b9;
+}
+
+.main {
+    display: grid;
+    grid-template-areas:
+    "logo title title"
+    "main main main"
+    "register register register"
+    "nav nav nav";
+    /*background-color:white; */
+
+
+    grid-template-rows: 208.15px 282px 600px 137px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0px;
+    }
+
+/*.main > div {
+    background-color: limegreen; */
+
+
+
+.logo {
+    grid-area: logo;
+    background-color: #293f50;
+    
+    }
+.logo img {
+    padding-top: 20px;
+    margin-left: 21px;
+}
+
+.tagline {
+        margin: 66px 0 22px 0;
+        text-align: right;
+}
+.primary-nav {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+
+.nav1 {
+    text-align: right;
+  }
+.nav1 li {
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: top;
+    list-style:none;
+  }
+.nav1 li:last-child {
+    margin-right: 0;
+  }
+
+
+.title {
+    grid-area: title;
+    background-color: #293f50;
+    }
+    
+.main1 {
+    grid-area: main;
+    background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+}
+.register {
+    grid-area: register;
+    }
+
+.nav {
+    grid-area: nav;
+    background-color: #293f50;
+    }
+
+/*
+.inner-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    }
+.inner-grid > div {
+    background: lightgreen;
+    padding: 8px;
+    */
+
+.title {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    
+    
+}
+
+h1, h2, h3, h4 {
+    color: #648880;
+  }
+  h1, h3, h4, h5, p {
+    margin-bottom: 22px;
+  }
+  h1 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  h2 {
+    font-size: 24px;
+    line-height: 44px;
+  }
+  h3 {
+    font-size: 21px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  
+  h5 {
+    color: #a9b2b9;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+.lead p {
+    
+    line-height: 33px;
+    color: #888;
+    font: 300 16px/22px "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 21px;
+    line-height: 33px;
+}
+
+.lead {
+    text-align: center;
+}
+.main2 {
+    padding: 44px 0 22px 0;
+}   
+
+.register {
+    display: grid;
+    grid-template-columns: 33% 1fr;
+    background-color:white; 
+
+}
+/*========================================
+Добавляем карту
+======================================== */
+
+
+.venue-map {
+    
+    width: 90%;
+    height: 80%;
+    margin: 25px 15px 15px 15px;
+    
+  }
+
+.adr {
+    margin-left: 21px;
+}
+
+.fotter-nav {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+
+.nav2 {
+    text-align: right;
+  }
+.nav2 li {
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: top;
+    list-style:none;
+  }
+.nav2 li:last-child {
+    margin-right: 0;
+  }
+
+/*========================================
+Форма регистрации
+======================================== */
+
+
+.myForm {
+display: grid;
+grid-template-columns: [labels] auto [controls] 1fr;
+grid-auto-flow: row;
+grid-gap: .8em;
+background: beige;
+padding: 1.2em;
+margin: 25px 15px 15px 15px;
+}
+.myForm > label,
+.myForm > fieldset {
+grid-column: labels;
+grid-row: auto;
+}
+.myForm > input,
+.myForm > select,
+.myForm > textarea {
+grid-column: controls;
+grid-row: auto;
+padding: .4em;
+border: 0;
+}
+.myForm > fieldset,
+.myForm > button {
+grid-column: span 2;
+}
+.myForm > button {
+padding: 1em;
+background: darkkhaki;
+border: 0;
+color: white;
+}
+
+.register-text {
+    margin-left: 20px;
+    font: 300 16px/22px "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.why-attend {
+    list-style: square;
+    margin: 0 0 22px 30px;
+  }

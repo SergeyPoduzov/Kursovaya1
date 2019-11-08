@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Styles Conference</title>
+        <link rel="stylesheet" href="stylessheets/style13.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,100&subset=cyrillic,latin">
+        <style>
+            
+
+
+        </style>
+
+        
+    </head>
+    
+    <body>
+        <div class="main">
+            
+            <div class="logo">
+                <img src="./images/logo.png" alt="Logo highjtloads">
+            </div>
+            <div class="title">
+                <div class="nav1">
+                    <h3 class="tagline">6&ndash;8 ноября &mdash; Санкт-Петербург, гостиница Прибалтийская </h3>
+                </div>
+                <div class="nav1 primary-nav">
+                       
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="schedule2.html">Спикеры и расписание</a></li>
+                        <li><a href="venue2.html">Место проведения</a></li>
+                        <li><a href="register.html">Регистрация</a></li>
+                    </ul>
+                            
+                </div>
+            </div>
+            <div class="main1 lead">
+                           
+                <div class="main2">    
+                    <h1>Регистрация</h1>
+                    <p>Каждый год мы стремимся невероятно провести время и в этом году мы 
+                            хотели бы чтобы вы присоединились к нам. Вход на конференцию стоит 
+                            всего лишь 99$ и это одна из лучших ценностей, которую вы найдёте.</p>
+                </div>
+                    
+                
+                        
+            </div>
+            <div class="register">
+                <div class="register-text">
+                    <h2>Закажи билет на конференцию</h2>
+                    <h5>$99 за билет</h5>
+            
+                    <p>Приобретите билет на HihgLoad конфернецияю, используя форму справа. 
+                        Можно приобрести сразу несколько билетов, так что не стесняйтесь взять 
+                        с собой друга или двух. После того, как ваш заказ будет готов, мы 
+                        свяжемся с вами и предоставим квитанцию за покупку. Скоро увидимся!</p>
+                
+                    <h4>Зачем участвовать?</h4>
+                
+                    <ul class="why-attend">
+                        <li>Более двадцати спикеров мирового класса</li>
+                        <li>Один полный день мастер-классов и два полных дня презентаций</li>
+                        <li>Состоится гостинице Прибалтийская, в самом центре Санкт-Петербурга</li>
+                        <li>Самые передовые технологии</li>
+                    </ul>
+                </div>
+
+                <div class="register-form">
+                    <form class="myForm">
+                        <label for="customer_name">Имя </label>
+                        <input type="text" name="customer_name" id=”customer_name” required>
+                        <label for="phone_number">Телефон </label>
+                        <input type="tel" name="phone_number" id=”phone_number">
+                        <label for="email_address">Email </label>
+                        <input type="email" name="email_address" id="email_address">
+                        <fieldset>
+                        <legend>Какое такис заказать?</legend>
+                        <label> <input type="radio" name="taxi" id="taxi_nove" required value="car_none"> Нет </label>
+                        <label> <input type="radio" name="taxi" id="taxi_car" required value="car"> Яндекс Такси </label>
+                        <label> <input type="radio" name="taxi" id="taxi_van" required value="van"> Везет </label>
+                        <label> <input type="radio" name="taxi" id="taxi_tuk" required value="tuktuk"> 777 </label>
+                        </fieldset>
+                        <fieldset>
+                        <legend>Дополнительно - заказать номер:</legend>
+                        <label> <input type="checkbox" name="extras" id=”extras_nomer" value="nomer"> Номер в гостинице </label>
+                        <label> <input type="checkbox" name="extras" id=”extras_gid" value="gid"> Переводчика </label>
+                        <label> <input type="checkbox" name="extras" id=”extras_restotran" value="restotran"> Номер в ресторане </label>
+                        <label> <input type="checkbox" name="extras" id=”extras_lux" value="lux"> Встретить в аэропорту </label>
+                        </fieldset>
+                        <label for="pickup_time">Дата бронирования/Время</label>
+                        <input type="datetime-local" name="pickup_time" id="pickup_time" required>
+                        <label for="number_tickets">Количество билетов</label>
+                        <select name="number_tickets" id="number_tickets">
+                        <option value="" selected="selected">Выберите количество</option>
+                        <option value="one" >Один</option>
+                        <option value="two" >Два</option>
+                        <option value="Theree" >Три</option>
+                        </select>
+                        <label for="dropoff_place">Прибудите транспортом</label>
+                        <input type="text" name="dropoff_place" id="dropoff_place" required list="destinations">
+                        <datalist id="destinations">
+                        <option value="Аэропорт">
+                        <option value="Ж/Д Вокзал Московский">
+                        <option value="Автобусный вокзал">
+                        </datalist>
+                        <label for="comments">Комментарии к заказу</label>
+                        <textarea name="comments" id="comments" maxlength="500"></textarea>
+                        <button>Забронировать место на конференции</button>
+                    </form>
+
+                </div>
+                
+            </div>
+            <div class="nav fotter-nav nav2">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="schedule2.html">Спикеры и расписание</a></li>
+                    <li><a href="venue2.html">Место проведения</a></li>
+                    <li><a href="register.html">Регистрация</a></li>
+                </ul>
+            </div>
+                
+            
+        </div>
+        
+       
+    </body>
+    
+</html>
